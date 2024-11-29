@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra livros, desenhos e conteúdos incríveis. Explore romances, animações e novidades em nosso site.">
+  <title>Livros e Desenhos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <!-- Seção: Card sobre Netflix -->
+  <div class="card">
+    <div class="card__descrição">
+      <div class="descrição">
+        <h3 class="descrição__titulo">Para uma experiência animada ainda melhor, recomendamos...</h3>
+        <h2 class="descrição__titulo-livro">Netflix</h2>
+        <p class="descrição__texto">
+          Aproveite a imersão em uma vasta biblioteca de desenhos animados e filmes da Disney, Pixar e muito mais.
+        </p>
+      </div>
+      <img src="img/Netflix-logo.png" alt="Logo Netflix" class="descrição__imagem" style="width: 162px; height: 168px; object-fit: cover;">
+    </div>
+    <div class="card__botões">
+      <ul class="botões">
+        <li class="botões__item">
+          <img src="img/Favoritos.svg" alt="Adicionar aos favoritos">
+        </li>
+        <li class="botões__item">
+          <img src="img/Compras.svg" alt="Adicionar ao carrinho">
+        </li>
+      </ul>
+      <a href="https://www.netflix.com/br/" class="botões__ancora" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+    </div>
+  </div>
+
+  <!-- Seção: Carrossel de Livros de Romance -->
+  <section class="carrossel_">
+    <h2 class="carrossel__titulo">Livros de Romance</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/orgulho_e_preconceito.jpg" alt="Orgulho e Preconceito"></div>
+        <div class="swiper-slide"><img src="img/a_culpa_e_das_estrelas.jpg" alt="A Culpa é das Estrelas"></div>
+        <div class="swiper-slide"><img src="img/como_eu_era_antes_de_voce.jpg" alt="Como Eu Era Antes de Você"></div>
+        <div class="swiper-slide"><img src="img/um_dia.jpg" alt="Um Dia"></div>
+        <div class="swiper-slide"><img src="img/o_morro_dos_ventos_uivantes.jpg" alt="O Morro dos Ventos Uivantes"></div>
+        <div class="swiper-slide"><img src="img/amor_nos_tempos_do_colera.jpg" alt="Amor nos Tempos do Cólera"></div>
+        <div class="swiper-slide"><img src="img/mil_beijos_de_garoto.jpg" alt="Mil Beijos de Garoto"></div>
+        <div class="swiper-slide"><img src="img/os_sete_maridos_de_evelyn_hugo.jpg" alt="Os Sete Maridos de Evelyn Hugo"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Seção: Card sobre Walt Disney -->
+  <div class="card">
+    <div class="card__descrição">
+      <div class="descrição">
+        <img src="img/Estrelinhas.svg" alt="Avaliação: 5 estrelas">
+        <h3 class="descrição__titulo">Desenhista do Mês</h3>
+        <h2 class="descrição__titulo-livro">Walt Disney</h2>
+        <p class="descrição__texto">
+          Walt Disney foi um animador, cineasta e empresário, sendo o criador do icônico Mickey Mouse e o fundador da Disney, um dos maiores impérios de entretenimento de todos os tempos. Ele revolucionou o mundo dos desenhos animados e ajudou a transformar a animação em uma forma de arte globalmente reconhecida.
+        </p>
+      </div>
+      <img src="img/Walt_Disney_1946.jpg" alt="Walt Disney" width="162" height="168" class="descrição__imagem">
+    </div>
+    <div class="card__botões">
+      <ul class="botões">
+        <li class="botões__item"><img src="img/Favoritos.svg" alt="Adicionar aos favoritos"></li>
+        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+      </ul>
+      <a href="#" class="botões__ancora" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+    </div>
+  </div>
+
+  <!-- Seção: Tópicos relacionados -->
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Mais Sobre Desenhos</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Desenhos Clássicos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Cartoons Antigos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Estúdios de Animação</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Desenhos Modernos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Toy Story</a></li>
+    </ul>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <form action="#" method="POST">
+      <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" required>
+      <button type="submit" class="contato__botão">Cadastrar</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- Rodapé -->
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Drawn</h2>
+    <p>© 2024 - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
+<div class="swiper-slide">
+  <img src="img/filme-ToyStory.jpg" alt="Livro sobre apache aviação geral" width="302" height="423">
+</div>
+<div class="swiper-slide">
+  <img src="img/filme-batman.jpg" alt="Livro sobre como se tornar piloto" width="302" height="423">
+</div>
+<div class="swiper-slide">
+  <img src="img/filme-divertidamente.jpg" alt="Livro curiosidade de aviação" width="302" height="423">
+</div>
+
+</div> <!-- Fechamento do swiper-wrapper -->
+<!-- Navegação dos botões do swiper -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div> <!-- Fechamento do swiper -->
+
+<!-- Seção do Card - Desenhista do Mês -->
+<div class="card">
+  <div class="card__descrição">
+    <div class="descrição">
+      <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+      <h3 class="descrição__titulo">Desenhista do Mês</h3>
+      <h2 class="descrição__titulo-livro">Walt Disney</h2>
+      <p class="descrição__texto">
+        Walt Disney foi um animador, cineasta e empresário, sendo o criador do icônico Mickey Mouse e o fundador da Disney, 
+        um dos maiores impérios de entretenimento de todos os tempos. Ele revolucionou o mundo dos desenhos animados e ajudou 
+        a transformar a animação em uma forma de arte globalmente reconhecida.
+      </p>
+    </div>
+    <img src="img/Walt_Disney_1946.jpg" width="162" height="168" class="descrição__imagem">
+  </div>
+
+  <div class="card__botões">
+    <ul class="botões">
+      <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+      <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+    </ul>
+    <a class="botões__ancora" target="_blank" href="#">Saiba mais</a>
+  </div>
+</div>
+
+<!-- Seção Tópicos -->
+<section class="tópicos">
+  <h2 class="tópicos__titulo">MAIS SOBRE DESENHOS</h2>
+  <ul class="tópicos__lista">
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Desenhos Clássicos</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Cartoons Antigos</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Estúdios de Animação</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Desenhos Modernos</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">ToyStory</a>
+    </li>
+  </ul>
+</section>
+
+<!-- Seção de Contato -->
+<section class="contato">
+  <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+  <p class="contato__texto">
+    Atualizações de e-books, novos livros, promoções e outros.
+  </p>
+  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+</section>
+
+<hr />
+
+<!-- Rodapé -->
+<footer class="rodapé">
+  <h2 class="rodapé__titulo">Grupo Drawn</h2>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+  });
+</script>
+</body>
+</html>
+<div class="swiper-slide">
+  <img src="img/filme-ToyStory.jpg" alt="Livro sobre apache aviação geral" width="302" height="423">
+</div>
+<div class="swiper-slide">
+  <img src="img/filme-batman.jpg" alt="Livro sobre como se tornar piloto" width="302" height="423">
+</div>
+<div class="swiper-slide">
+  <img src="img/filme-divertidamente.jpg" alt="Livro curiosidade de aviação" width="302" height="423">
+</div>
+
+</div> <!-- Fechamento do swiper-wrapper -->
+<!-- Navegação dos botões do swiper -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div> <!-- Fechamento do swiper -->
+
+<!-- Seção do Card - Desenhista do Mês -->
+<div class="card">
+  <div class="card__descrição">
+    <div class="descrição">
+      <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+      <h3 class="descrição__titulo">Desenhista do Mês</h3>
+      <h2 class="descrição__titulo-livro">Walt Disney</h2>
+      <p class="descrição__texto">
+        Walt Disney foi um animador, cineasta e empresário, sendo o criador do icônico Mickey Mouse e o fundador da Disney, 
+        um dos maiores impérios de entretenimento de todos os tempos. Ele revolucionou o mundo dos desenhos animados e ajudou 
+        a transformar a animação em uma forma de arte globalmente reconhecida.
+      </p>
+    </div>
+    <img src="img/Walt_Disney_1946.jpg" width="162" height="168" class="descrição__imagem">
+  </div>
+
+  <div class="card__botões">
+    <ul class="botões">
+      <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+      <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+    </ul>
+    <a class="botões__ancora" target="_blank" href="#">Saiba mais</a>
+  </div>
+</div>
+
+<!-- Seção Tópicos -->
+<section class="tópicos">
+  <h2 class="tópicos__titulo">MAIS SOBRE DESENHOS</h2>
+  <ul class="tópicos__lista">
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Desenhos Clássicos</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Cartoons Antigos</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Estúdios de Animação</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">Desenhos Modernos</a>
+    </li>
+    <li class="tópicos__item">
+      <a class="tópicos__link" target="_blank" href="#">ToyStory</a>
+    </li>
+  </ul>
+</section>
+
+<!-- Seção de Contato -->
+<section class="contato">
+  <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+  <p class="contato__texto">
+    Atualizações de e-books, novos livros, promoções e outros.
+  </p>
+  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+</section>
+
+<hr />
+
+<!-- Rodapé -->
+<footer class="rodapé">
+  <h2 class="rodapé__titulo">Grupo Drawn</h2>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+  });
+</script>
+</body>
+</html>
+
